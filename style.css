@@ -15,7 +15,7 @@ body{
 
 #mainWrapper{
     margin-top: 5%;
-    background: linear-gradient(90deg, #428aad 50%, #303030 50%);
+    background: linear-gradient(90deg, #4aa0ba 50%, #303030 50%);
     height: 90%;
     width: 80%;
 }
@@ -45,7 +45,7 @@ nav>#quarterCircleWrapper{
     
 }
 #quarterCircle>a{
-    color: #428aad;
+    color: #4aa0ba;
     text-decoration: none;
     width: 100%;
     text-align: center;
@@ -91,7 +91,7 @@ nav>ul>li a:hover{
     }
 nav>ul>li::before{
     content: "\2022"; 
-    color: #428aad;
+    color: #4aa0ba;
     font-weight: bold; 
     display: inline-block;
     width: 1em;
@@ -120,7 +120,7 @@ nav>ul>.githubWrapper:hover{
 }
 #headerName>#sName{
     padding: 10px;
-    color: #428aad;
+    color: #4aa0ba;
     flex: 1;
     text-align: left;
     letter-spacing: -2px;
@@ -134,7 +134,7 @@ nav>ul>.githubWrapper:hover{
     flex-direction: column;
 }
 #headerDescription>h2{
-    background: #428aad;
+    background: #4aa0ba;
     margin-bottom: 0px;
     width: 100%;
     height: 40px;
@@ -183,7 +183,7 @@ section{
     width: 200px;
     height: 200px;
     margin: -40px -40px 0px 0px;
-    background: #428aad;
+    background: #4aa0ba;
     border-radius: 0 0 0 200px;
     -moz-border-radius: 0 0 0 200px;
     -webkit-border-radius: 0 0 0 200px;
@@ -242,7 +242,7 @@ section{
     width: 150px;
     height: 180px;
     background: white;
-    color: #428aad;
+    color: #4aa0ba;
     vertical-align: top;
     box-shadow: 0px 0px 5px lightgray;
     
@@ -306,7 +306,7 @@ section{
     flex: 1;
 }
 #section2Break{
-    background: #428aad;
+    background: #4aa0ba;
     padding: 30px;
 }
 
@@ -329,7 +329,7 @@ section{
     height: 30px;
     max-width: 150px;
     background: white;
-    border: solid 2px #428aad;
+    border: solid 2px #4aa0ba;
     flex: 1;
     transition: 0.2s;
     font-size: 11px;
@@ -337,13 +337,13 @@ section{
 }
 .btn:hover{
     cursor: pointer;
-    background:#428aad;
+    background:#4aa0ba;
     
     color: white;
 }
 #btn2{
     margin-left: 40px;
-    background: #428aad;
+    background: #4aa0ba;
 }
 
 /* thumbnails layout*/
@@ -375,7 +375,7 @@ section{
 
 .thumbBtn:hover{
     cursor: pointer;
-    background:#428aad;
+    background:#4aa0ba;
     color: white;
 }
 
@@ -386,7 +386,7 @@ section{
 
 #contactSection{
     background: #303030;
-    border-top: solid 10px #428aad;
+    border-top: solid 10px #4aa0ba;
 
 
 }
@@ -412,7 +412,7 @@ section{
 }
 #contactSection>form>input:focus{
     outline-width: 2px;
-    outline-color: #428aad;
+    outline-color: #4aa0ba;
 
 }
 #contactSection>form>textarea{
@@ -427,8 +427,8 @@ section{
 }
 #contactSection>form>textarea:focus{
     outline-width: 2px;
-    outline-color: #428aad;
-    outline-color: #428aad;
+    outline-color: #4aa0ba;
+    outline-color: #4aa0ba;
 
 }
 #contactSection>form>.btn{
@@ -440,8 +440,8 @@ section{
 
 footer{
     padding:40px 0;
-    border-bottom: solid 10px #428aad;
-    border-top: solid 10px #428aad;
+    border-bottom: solid 10px #4aa0ba;
+    border-top: solid 10px #4aa0ba;
     background: #303030;
     color: whitesmoke;
     display: flex;
