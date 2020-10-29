@@ -131,6 +131,7 @@ nav>.githubWrapper:hover{
     flex: 1;
     text-align: right;
     letter-spacing: 4px;
+    
 }
 #headerName>#sName{
     padding: 10px;
@@ -141,12 +142,12 @@ nav>.githubWrapper:hover{
 }
 #headerDescription{
     margin: 40px auto;
-    width: 35%;
+    width: 320px;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
-}
+    }
 #headerDescription>h2{
     background: #4aa0ba;
     margin-bottom: 0px;
@@ -486,50 +487,20 @@ footer>p{
 }
 footer>.githubWrapper{
     transition: 0.2s;
+    flex: 1;
 }
 footer>.githubWrapper:hover{
     transform: translateY(-5px);
 }
 
-
-@media only screen and (max-width: 580px){
-    #mainWrapper{
-    margin-top: 0%;
-    background: linear-gradient(90deg, #4aa0ba 50%, #303030 50%);
-    height: 100%;
-    width: 100%;
-}
-    header{
-    padding: 0px;
-}
-    #quarterCircle{
-    width: 100px;
-    height: 100px;
-    background: whitesmoke;
-    border-radius: 0 0 100px 0;
-    -moz-border-radius: 0 0 100px 0;
-    -webkit-border-radius: 0 0 100px 0;
+/*////////////////MEDIA QUERY\\\\\\\\\\\\\\\\*/
+@media only screen and (max-width: 700px){
+#headerName{
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 4px white;
-    flex: 1;
-    
+    font-size: 24px;
 }
-
-    #quarterCircle>a>p{
-    flex-basis: 20%;
-    font-size: 22px;
-    
-}
-    #quarterCircle>a>#aboutWord{
-    font-size: 16px;
-    padding-right: 0px;
-        padding-top: 10px;
-}
-    /*nav bar*/
-
-nav{
+    nav{
     display: flex;
 }
 nav>ul{
@@ -573,6 +544,140 @@ nav>.githubWrapper>p{
     display: none;
 }
    
+#quarterCircleWrapper2{
+    flex-basis: 15px;
+    display: flex;
+    
+    }
+#quarterCircle2{
+    width: 100px;
+    height: 100px;
+    margin: -40px -40px 0px 0px;
+    background: #4aa0ba;
+    border-radius: 0 0 0 100px;
+    -moz-border-radius: 0 0 0 100px;
+    -webkit-border-radius: 0 0 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    padding-left: 40px;
+}
+#quarterCircle2>a{
+    color: white;
+    text-decoration: none;
+   
+    text-align: center;
+    padding-bottom: 30px;
+    transition: 0.2s;
+}
+#quarterCircle2>a>p{
+    padding: 5px;
+    font-size: 14px;
+}
+#quarterCircle2>a>img{
+    filter: invert();
+    height: 30px;
+    
+}
+}
+    /*-----------------------contact form-----------------------*/
+
+@media only screen and (max-width: 900px){
+
+
+#contactSection{
+    background: #303030;
+    border-top: solid 10px #4aa0ba;
+    border-bottom: solid 10px #4aa0ba;
+
+}
+#contactSection>form{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: radial-gradient(white, whitesmoke);
+    box-shadow: -2px 2px 10px black;
+
+    display: flex;
+    flex-direction: column;
+
+}
+#contactSection>form>input{
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -2px 2px 10px #ededed;
+}
+#contactSection>form>input:focus{
+    outline-width: 2px;
+    outline-color: #4aa0ba;
+
+}
+#contactSection>form>textarea{
+  
+    margin: 20px auto;
+    border: none;
+    height: 100px;
+    resize: none;
+    box-shadow: -2px 2px 10px #ededed;
+    width: 100%;
+
+}
+#contactSection>form>textarea:focus{
+    outline-width: 2px;
+    outline-color: #4aa0ba;
+    outline-color: #4aa0ba;
+
+}
+#contactSection>form>.btn{
+    margin: auto;
+    width: 100px;
+    background: lightGray;
+}
+}
+@media only screen and (max-width: 480px){
+    #mainWrapper{
+    margin-top: 0%;
+    background: linear-gradient(90deg, #4aa0ba 50%, #303030 50%);
+    height: 100%;
+    width: 100%;
+}
+    header{
+    padding: 0px;
+    height: 80vh; 
+    }
+
+    #quarterCircle{
+    width: 100px;
+    height: 100px;
+    background: whitesmoke;
+    border-radius: 0 0 100px 0;
+    -moz-border-radius: 0 0 100px 0;
+    -webkit-border-radius: 0 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px white;
+    flex: 1;
+    
+}
+
+    #quarterCircle>a>p{
+    flex-basis: 20%;
+    font-size: 22px;
+    
+}
+    #quarterCircle>a>#aboutWord{
+    font-size: 16px;
+    padding-right: 0px;
+        padding-top: 10px;
+}
+    /*nav bar*/
+
 
 
 
@@ -602,6 +707,7 @@ nav>.githubWrapper>p{
     text-align: center;
     display: flex;
     flex-direction: column;
+    
 }
 #headerDescription>h2{
     background: #4aa0ba;
@@ -644,11 +750,7 @@ section{
     text-align: center;
     font-size: 11px;
 }
-#quarterCircleWrapper2{
-    flex-basis: 15px;
-    display: flex;
-    
-    }
+
 #quarterCircle2{
     width: 100px;
     height: 100px;
@@ -663,24 +765,6 @@ section{
     flex: 1;
     padding-left: 40px;
 }
-#quarterCircle2>a{
-    color: white;
-    text-decoration: none;
-   
-    text-align: center;
-    padding-bottom: 30px;
-    transition: 0.2s;
-}
-#quarterCircle2>a>p{
-    padding: 5px;
-    font-size: 14px;
-}
-#quarterCircle2>a>img{
-    filter: invert();
-    height: 30px;
-    
-}
-
 section{
 
 }
@@ -860,62 +944,7 @@ section{
     background:#4aa0ba;
     color: white;
 }
-/*-----------------------contact form-----------------------*/
 
-
-
-#contactSection{
-    background: #303030;
-    border-top: solid 10px #4aa0ba;
-    border-bottom: solid 10px #4aa0ba;
-
-}
-#contactSection>form{
-    width: 90%;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
-    background: radial-gradient(white, whitesmoke);
-    box-shadow: -2px 2px 10px black;
-
-    display: flex;
-    flex-direction: column;
-
-}
-#contactSection>form>input{
-    margin: 10px 5px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: -2px 2px 10px #ededed;
-}
-#contactSection>form>input:focus{
-    outline-width: 2px;
-    outline-color: #4aa0ba;
-
-}
-#contactSection>form>textarea{
-  
-    margin: 20px auto;
-    border: none;
-    height: 100px;
-    resize: none;
-    box-shadow: -2px 2px 10px #ededed;
-    width: 100%;
-
-}
-#contactSection>form>textarea:focus{
-    outline-width: 2px;
-    outline-color: #4aa0ba;
-    outline-color: #4aa0ba;
-
-}
-#contactSection>form>.btn{
-    margin: auto;
-    width: 100px;
-    background: lightGray;
-}
 /*-----------------------footer-----------------------*/
 
 footer{
