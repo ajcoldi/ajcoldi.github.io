@@ -159,10 +159,14 @@
                         
                        
                         <div class="thumbnail thumbWebsites">
-                            <img src="assets/art2.jpg">
+                            <img id="myImg"src="assets/art2.jpg">
                             <p>Game Concept</p>
                             <small>Neo noir style mockup</small>
                         </div> 
+        <div id="modal">
+            <button id="closeModal">X</button>
+            <img class="modalContent" id="img01">
+        </div>
                         <div class="thumbnail thumbWebsites">
                             <img src="assets/art3.jpg">
                             <p>Game Concept</p>
@@ -230,6 +234,31 @@
                 mobileNav.style.display = "block";
             }
         }
+        
+        
+        
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var wrap = document.getElementById("modal");
+        var closeModal = document.getElementById("closeModal");
+        img.onclick = function(){
+            wrap.style.display = "block";
+            modalImg.src  = this.src;
+            
+        }
+        closeModal.onclick = function(){
+            wrap.style.display = "none";
+        }
+        myImg
+        img01        
+modalContent
+
+        
+        
+        
+        
+        
+        
     </script>    
     </body>
 </html>
