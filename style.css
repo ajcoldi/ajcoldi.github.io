@@ -556,7 +556,7 @@ nav>ul{
     list-style: none;
     display: none;
 }
-#hamburgerNavbar>li, a{
+#hamburgerNavbar>ul>li, a{
     text-decoration: none;
     padding: 5px 10px;
 }
