@@ -159,16 +159,19 @@
                         
                        
                         <div class="thumbnail thumbWebsites">
-                            <img id="myImg"src="assets/art2.jpg">
+                            <img src="assets/art2.jpg">
                             <p>Game Concept</p>
                             <small>Neo noir style mockup</small>
                         </div> 
-        <div id="modal">
-            <button id="closeModal">X</button>
+        <div id="modal"></div>
+        <div id="modalImgContainer">
             <img class="modalContent" id="img01">
-        </div>
+            <button id="closeModal">X</button>             
+
+        </div>               
+                        
                         <div class="thumbnail thumbWebsites">
-                            <img src="assets/art3.jpg">
+                            <img id="myImg" src="assets/art3.jpg">
                             <p>Game Concept</p>
                             <small>Future healmet concept</small>
                         </div> 
@@ -239,15 +242,19 @@
         
         var img = document.getElementById("myImg");
         var modalImg = document.getElementById("img01");
+        var imgContainer = document.getElementById("modalImgContainer");
+        
         var wrap = document.getElementById("modal");
         var closeModal = document.getElementById("closeModal");
         img.onclick = function(){
-            wrap.style.display = "block";
+            imgContainer.style.display = "flex";
+            wrap.style.display = "flex";
             modalImg.src  = this.src;
             
         }
         closeModal.onclick = function(){
             wrap.style.display = "none";
+            imgContainer.style.display = "none";
         }
         myImg
         img01        

@@ -495,29 +495,60 @@ footer>.githubWrapper:hover{
 
 
 #modal{
-      position: fixed;
-    background: white;
+    position: fixed;
+    background: #303030;
+    opacity: 0.9;
     border-bottom: 2px solid #eaeaea;
     height: 100vh;
     width: 100vw;
     left: 0;
     top: 0;
-    z-index: 9994;
-   
+    z-index: 999;
     /* MAGIC HAPPENS HERE */
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    display: flex;
+    display: none;
+    transition: 0.2s;
+}
+#modalImgContainer{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 9994;
+    /* MAGIC HAPPENS HERE */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    display: none;
+        transition: 0.2s;
+
 }
 #img01{
     margin: auto;
-    border: solid 2px blue;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
+    transition: 0.2s;
+
 }
 
-
-
+#closeModal{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin:auto;
+    margin-left: 85%;
+    margin-top: 40px;
+    background: none;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    border: none;
+ 
+}
+#closeModal:hover{
+    cursor: pointer;
+}
 
 
 
