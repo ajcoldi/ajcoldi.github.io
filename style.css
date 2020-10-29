@@ -82,11 +82,15 @@ nav>ul{
     font-size: 12px;
 }
 nav>ul>li,a {
-    flex: 1;
     text-decoration: none;
     color: white;
     transition: 0.2s;
 }
+nav>ul>li {
+    flex: 1;
+   
+}
+
 nav>ul>li a:hover{
     text-decoration: underline;
     }
@@ -98,11 +102,17 @@ nav>ul>li::before{
     width: 1em;
     margin-left: -1em;
 }
-nav>ul>.githubWrapper{
+nav>.githubWrapper{
+    flex: 0.1;
     transition: 0.2s;
+    margin: auto;
 }
-nav>ul>.githubWrapper:hover{
+
+nav>.githubWrapper:hover{
     transform: translateY(-5px);
+}
+#hamburgerBtn{
+    display: none;
 }
 /*-----------------------header text-----------------------*/
 
@@ -386,8 +396,6 @@ section{
 #contactSection{
     background: #303030;
     border-top: solid 10px #4aa0ba;
-
-
 }
 #contactSection>form{
     width: 60%;
@@ -397,7 +405,6 @@ section{
     text-align: center;
     background: radial-gradient(white, whitesmoke);
     box-shadow: -2px 2px 10px black;
-
     display: flex;
     flex-direction: column;
 
@@ -488,7 +495,7 @@ footer>.githubWrapper:hover{
     background: linear-gradient(90deg, #4aa0ba 50%, #303030 50%);
     height: 100%;
     width: 100%;
-    }
+}
     header{
     padding: 0px;
 }
@@ -520,40 +527,53 @@ footer>.githubWrapper:hover{
     /*nav bar*/
 
 nav{
-    display: none;
+    display: flex;
 }
 nav>ul{
-    flex:1;
+    display: none;
+    
+}
+    
+#hamburgerBtn{
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
     display: flex;
-    list-style: none;
-    margin-left: 40px;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 12px;
+    transition: all 0.5s ease-in-out;
 }
-nav>ul>li,a {
-    flex: 1;
+#hamburgerBtn>img{
+    height: 25px;
+    width: 30px;
+    filter: invert();
+}    
+#hamburgerNavbar{
+    text-align: right;
+    list-style: none;
+    display: none;
+}
+#hamburgerNavbar>li, a{
     text-decoration: none;
-    color: white;
+    padding: 5px 10px;
+}
+nav>.githubWrapper{
+    flex: 0.1;
     transition: 0.2s;
+    margin: auto;
 }
-nav>ul>li a:hover{
-    text-decoration: underline;
-    }
-nav>ul>li::before{
-    content: "\2022"; 
-    color: #4aa0ba;
-    font-weight: bold; 
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+nav>.githubWrapper>img{
+    margin-right: 20px;
+    width: 30px;
 }
-nav>ul>.githubWrapper{
-    transition: 0.2s;
+nav>.githubWrapper>p{
+    display: none;
 }
-nav>ul>.githubWrapper:hover{
-    transform: translateY(-5px);
-}
+   
+
+
+
     /*-----------------------header text-----------------------*/
 
 

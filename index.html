@@ -28,13 +28,22 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html">Projects</a></li>
                         <li><a href="index.html">Contact</a></li>
-                        <a class="githubWrapper"  href="index.html">
-                            <img src="assets/githubLogo.png">
-                            <p>Github</p>
-                        </a>
+                        
                         
                     </ul>
+                    <a class="githubWrapper"  href="index.html">
+                            <img src="assets/githubLogo.png">
+                            <p>Github</p>
+                    </a>
+                    <div id="hamburgerBtn">
+                        <img src="assets/hamburger-menu.png">
+                    </div>
                 </nav>
+                <div id="hamburgerNavbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </div>
                 
                 
                     <div id="headerName">
@@ -207,6 +216,18 @@
             
         </footer>
     </div>
-    <script></script>    
+    <script>
+        
+        var hamburgerBtn = document.getElementById('hamburgerBtn');
+        var mobileNav = document.getElementById('hamburgerNavbar');
+        
+        hamburgerBtn.onclick = function hbMenu(){ 
+            if (mobileNav.style.display === 'block') {
+                mobileNav.style.display = 'none';
+            } else{
+                mobileNav.style.display = "block";
+            }
+        }
+    </script>    
     </body>
 </html>
