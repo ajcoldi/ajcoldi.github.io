@@ -19,7 +19,6 @@ body{
     height: 90%;
     width: 80%;
 }
-
 /*-----------------------header section-----------------------*/
 
 header{
@@ -386,11 +385,7 @@ section{
 }
 
 
-.thumbBtn:hover{
-    cursor: pointer;
-    background:#4aa0ba;
-    color: white;
-}
+
 
 
 /*-----------------------contact form-----------------------*/

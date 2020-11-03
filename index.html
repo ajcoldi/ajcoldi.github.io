@@ -167,7 +167,6 @@
                         
 <div id="modalImgContainer">
     <img class="modalContent" id="img01">
-    <button id="closeModal">X</button>             
 </div>               
                         <div class="thumbnail thumbWebsites">
                             <img class="thumbImg" src="assets/art3.jpg">
@@ -238,28 +237,28 @@
         }
         
         
-        
-        var img = document.querySelector(".thumbImg");
-        var modalImg = document.querySelectorAll(".modalContent");
-        var imgContainer = document.getElementById("modalImgContainer");
-        
         var wrap = document.getElementById("modal");
         
-        var closeModal = document.getElementById("closeModal");
+        var imgContainer = document.getElementById("modalImgContainer");
+
+        var img = document.querySelector(".thumbImg");
+        var modalImg = document.getElementById("img01");
         
+                
         Array.from(document.querySelectorAll(".thumbImg")).forEach(item => {
             item.addEventListener("click", Event => {
-                imgContainer.style.display = "flex";
+               
                 wrap.style.display = "flex";
-                modalImg.src = this.src; 
+                imgContainer.style.display = "flex";
                 modalImg.style.display = "block";
+                modalImg.src = event.target.src;
             });
             
         });
       
         
         
-        closeModal.onclick = function(){
+        imgContainer.onclick = function(){
             wrap.style.display = "none";
             imgContainer.style.display = "none";
         };
