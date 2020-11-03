@@ -528,7 +528,7 @@ footer>.githubWrapper:hover{
     margin: auto;
     height: 400px;
     width: 400px;
-    transition: 0.2s;
+    z-index: 9999;
 
 }
 

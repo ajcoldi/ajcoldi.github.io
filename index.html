@@ -159,34 +159,33 @@
                         
                        
                         <div class="thumbnail thumbWebsites">
-                            <img src="assets/art2.jpg">
+                            <img class="thumbImg" src="assets/art2.jpg">
                             <p>Game Concept</p>
                             <small>Neo noir style mockup</small>
                         </div> 
-        <div id="modal"></div>
-        <div id="modalImgContainer">
-            <img class="modalContent" id="img01">
-            <button id="closeModal">X</button>             
-
-        </div>               
+<div id="modal"></div>
                         
+<div id="modalImgContainer">
+    <img class="modalContent" id="img01">
+    <button id="closeModal">X</button>             
+</div>               
                         <div class="thumbnail thumbWebsites">
-                            <img id="myImg" src="assets/art3.jpg">
+                            <img class="thumbImg" src="assets/art3.jpg">
                             <p>Game Concept</p>
                             <small>Future healmet concept</small>
                         </div> 
                         <div class="thumbnail thumbWebsites">
-                            <img src="assets/art4.jpg">
+                            <img class="thumbImg" src="assets/art4.jpg">
                             <p>Pencil portrait</p>
                             <small>Taken from the movie 'Taxi driver'</small>
                         </div> 
                         <div class="thumbnail thumbWebsites">
-                            <img src="assets/art5.jpg">
+                            <img class="thumbImg" src="assets/art5.jpg">
                             <p>Biro drawing</p>
                             <small>Spare time doodle</small>
                         </div> 
                         <div class="thumbnail thumbWebsites">
-                            <img src="assets/art6.jpg">
+                            <img class="thumbImg" src="assets/art6.jpg">
                             <p>Biro drawing</p>
                             <small>Spare time doodle</small>
                         </div> 
@@ -240,25 +239,31 @@
         
         
         
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
+        var img = document.querySelector(".thumbImg");
+        var modalImg = document.querySelectorAll(".modalContent");
         var imgContainer = document.getElementById("modalImgContainer");
         
         var wrap = document.getElementById("modal");
+        
         var closeModal = document.getElementById("closeModal");
-        img.onclick = function(){
-            imgContainer.style.display = "flex";
-            wrap.style.display = "flex";
-            modalImg.src  = this.src;
+        
+        Array.from(document.querySelectorAll(".thumbImg")).forEach(item => {
+            item.addEventListener("click", Event => {
+                imgContainer.style.display = "flex";
+                wrap.style.display = "flex";
+                modalImg.src = this.src; 
+                modalImg.style.display = "block";
+            });
             
-        }
+        });
+      
+        
+        
         closeModal.onclick = function(){
             wrap.style.display = "none";
             imgContainer.style.display = "none";
-        }
-        myImg
-        img01        
-modalContent
+        };
+
 
         
         
