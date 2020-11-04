@@ -197,28 +197,28 @@
                 </section>
                 <section id="contactSection">
                     
-                    <form id="form" action="mailto:alex.coldicott@outlook.com" method="post" enctype="text/plain">
+                    <form id="form" action="contactForm.php" method="post">
                         <h2>Contact me</h2>
                         <div class="formControl">
-                            <input id="name" type="text" placeholder="Name">
+                            <input id="name" name="name" type="text" placeholder="Name">
                             <i class="fas fa-check-circle"></i>
                             <i class="fas fa-exclamation-circle"></i>
                             <small>Error</small>
                         </div>
                         <div class="formControl">
-                            <input id="email" type="email" placeholder="Email">
+                            <input id="email" name="mail" type="email" placeholder="Email">
                             <i class="fas fa-check-circle"></i>
                             <i class="fas fa-exclamation-circle"></i>
                             <small>Error</small>
                         </div>
                         <div class="formControl">
-                            <input id="phone" type="number" placeholder="Phone (optional)">
+                            <input id="phone" name="phone" type="number" placeholder="Phone (optional)">
                             <i class="fas fa-check-circle"></i>
                             <i class="fas fa-exclamation-circle"></i>
                             <small>Error</small>
                         </div>
                         <div class="formControl">
-                            <textarea rows="6" maxlength="300" ></textarea>
+                            <textarea name="message" rows="6" maxlength="300" ></textarea>
                             
                             <small>Error</small>
                         </div>
