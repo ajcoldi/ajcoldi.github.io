@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background:#b32020;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: black 0px 0px 10px;
+}
+#blankFlex{
+    flex:0.5;
+}
+nav>#navImgWrap{
+    flex: 0.8;
+    margin: auto;
+    color: white;
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+#navImgWrap>img{
+    padding: 0 20px;
+    height: 40px;
+    filter: invert();
+}
+nav>ul{
+    display: flex;
+    flex: 1;
+    font-weight: 600;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: ghostwhite;
+
+}
+nav>ul>li  a:hover{
+    background-color: green; 
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url("assets/pizzaheader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+    justify-content: center;
+    align-content: center;
+}
+header>#headerImg{
+width: 100%;
+position: absolute;
+top: 0px;
+z-index: -10;
+opacity: 0.5;
+}
+header>input{
+    width: 400px;
+    margin: auto;
+    background: ghostwhite;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+#inputSearchIcon{
+    width: 40px;
+    margin: 0 auto;
+    position: relative;
+    right: -175px;
+    bottom: 40px;
+}
+#inputSearchIcon:hover{
+    cursor: pointer;
+}
+header>h1, h2{
+    color: white;
+    text-shadow: black 0px 0px 4px;
+
+}
+header>h1{
+    font-size: 70px;
+    font-weight: 600;
+    
+    font-family: 'Catamaran', sans-serif;
+}
+header>h2{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+header>small{
+    color: white;
+    position:relative;
+    bottom: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+#section1{
+    background: whitesmoke;
+  
+}
+#section1>h1{
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    color: #b32020;
+    padding-top: 50px;
+
+}
+#section1>h2{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    color: black;
+    padding-bottom: 50px;
+    text-shadow: none;
+}
+
+
+
+#section1>p{
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+#section1>p a{
+    margin-top: 20px;
+    justify-content: center;
+    
+    text-align: center;
+    border-radius: 20px;
+    background: #55ab3f;
+    color: white;
+    padding:5px 10px;
+    transition: 0.2s;
+}
+#section1>p a:hover{
+    cursor: pointer;
+    background: white;
+    border: solid 2px #55ab3f;
+    color: #55ab3f;
+}
+
+#headerFlexWrap{
+    margin: auto;
+ 
+    width: 90vw;
+    display: flex;
+    padding: 0 15vw;
+    
+}
+.testimonialWrap{
+    height: 200px;
+    width: 150px;
+    background: white;
+    box-shadow: grey 0px 0px 5px;
+    opacity: 0.9;
+    margin: auto;
+    padding:0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.2s;
+}
+.testimonialWrap:hover{
+    transform: translateY(-5px);
+}
+.testimonialWrap>img{
+    background: #303030;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.testimonialWrap>h3,p{
+  
+
+}
+.testimonialWrap>h3{
+
+}
+.testimonialWrap>p{
+    font-size: 12px;
+}
+.testimonialWrap>small{
+
+    padding: 5px;
+    color: #b32020;
+}
+
+
+
+
+        
+#section3{
+    height: 120vh;
+    padding: 80px;
+    background: whitesmoke;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "g1 g1 g2"
+    "g1 g1 g2"
+    "g1 g1 g5"
+    "g3 g4 g5"
+    "g3 g4 g6"
+    "g3 g4 g6"
+    ;
+}
+.gridItem{
+    background: whitesmoke;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    padding: 0;
+}
+.gridItem> button{
+    height: 30px;
+    width: 100%;
+    font-weight: 600;
+    background: #55ab3f;
+    border:none;
+    transition: 0.2s;
+    
+}
+.gridItem > h2{
+    width: 100%;
+    background: #303030;
+    opacity: 0.7;
+}
+.gridItem > p {
+    
+    width: 100%;
+    background: #303030;
+    opacity: 0.7;
+}
+.gridItem> button:hover{
+    cursor: pointer;
+    padding: 30px 0;
+}
+#gridItem1{
+    grid-area: g1;
+    background: url("assets/resturantPic.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    
+}
+#gridItem1>div{
+    background: black;
+    width: 100%;
+    height: 30px;
+    opacity: 0.6;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#gridItem1>div:hover{
+    height: 100px;
+    cursor: pointer;
+}
+#gridItem1>div>p{
+    font-size: 14px;
+}
+#gridItem3{
+    grid-area: g3;
+    background: url("assets/2pizzaDeal.jpg.crdownload");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#gridItem4{
+    grid-area: g4;
+    background: url("assets/pizzaPastaDeal.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+#gridItem2{
+    grid-area: g2;
+    }
+
+#gridItem5{
+    grid-area: g5;
+    }
+#gridItem6{
+    grid-area: g6;
+    }
+
+
+
+
+
+
+#img1{
+    background: url("assets/burgerMealDeal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#img2{
+    background: url("assets/iceCream.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img3{
+    background: url("assets/chickenWings.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.gridItemSmall{
+    border: solid 2px  #303030;
+    background: #303030;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.gridItemSmall>div{
+    flex: 1;
+    padding: 10px;
+    
+}
+.gridItemSmall>div>button{
+    height: 25px;
+    width: 40%;
+    border-radius: 10px;
+    background: #b32020;
+    border:none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.gridItemSmall>div>p{
+    font-size: 12px;
+}
+
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background: black;
+    color:white;
+    text-align: center;
+}
+footer>div{
+    
+flex: 1;
+}
+footer>div>h3{
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+}
+footer>p{
+    flex: 1;
+}
+footer>p>a{
+    color: #55ab3f;
+}
+footer>ul{
+    flex: 1;
+}
+footer>ul>li{
+    list-style:none;
+}
+footer>ul>li>a{
+    color: #55ab3f;
+    text-decoration: none;
+}
+
+
+
+
+#sectionAccordian{
+    background: whitesmoke;
+
+    padding-top: 0 40px;
+}
+#sectionAccordian>h2{
+    padding: 40px 0;
+    text-align: center;
+    color: grey;
+    font-size: 60px;
+    text-shadow: none;
+}
+#sectionAccordian>p{
+    width: 50%;
+    margin: auto;
+ 
+    text-align: center;
+    text-shadow: none;
+}
+#accordion{
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+#accordion>h3{
+    box-shadow: 0px 0px 4px lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 4px;
+    background: white;
+}
+#accordion>div{
+    
+    border-radius: 5px;
+    border: solid 2px whitesmoke;
+    background: white;
+    height: auto;
+    
+}
+.sectionItem{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px lightgray;
+    padding:10px 20px ;
+}
+.ItemDescript{
+    flex: 10;
+}
+.itemAdd{
+    flex: 1;
+}
