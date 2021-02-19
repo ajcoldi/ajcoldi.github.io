@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="jqueryui/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+</head>
+<body>
+    
+    <div id="liveChatBtn">
+        <h3>Need Help?</h3>
+    </div>
+    <nav>
+        <div class="socialMediaIcons">
+            <img src="assets/facebookIcon.png" alt="facebook">
+            <img src="assets/instagramIcon.png" alt="instagram">
+            <img src="assets/twitterIcon.png" alt="twitter">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Deals</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="headerItemWrapper">
+            <h1 class="headerItem">AdventureVerse</h1>
+            <h2 class="headerItem">subheader</h2>
+            <input class="headerItem" type="text" placeholder="search">
+            <img class="headerItem" src="" alt="">
+            <small class="headerItem">disclaimer</small>
+        </div>
+    </header>
+    <main>
+        <section class="" id="section1">
+            <h2>booking enquiery section</h2>
+            <form>
+                <select>
+                    <option>Adults</option>
+                    <option>xxx</option>
+                    <option>xxx</option>
+                </select>
+                <select>
+                    <option>Children (under 12s)</option>
+                    <option>xxx</option>
+                    <option>xxx</option>
+                </select>
+                <p><input placeholder="Choose When" type="text" id="datepicker"></p>
+                <button>Search</button>
+
+            </form>
+
+        </section>
+        <section id="section2">
+            <div id="sec2TxtWrap">
+                <h2>UK Breaks at AdventureVerse</h2>
+                <p>There are tons of <a href="#">activities</a> for all the family –  All of our activities offer instuctors, courses and equiptment for hire.</p>
+                <p>Try something new with a variety of indoor and outdoor <a href="#">activities</a>, or relax in a range of <a href="#">accommodation</a>  sizes and styles. Take some me-time at our award-winning <a href="#">Aqua Sana Spa</a>, or enjoy quality family time in our great restaurants or the amazing Subtropical Swimming Paradise, heated to a balmy 29.5C all year round.
+
+                Get all of the inside news on our <a href="#">Village Life blog.</a></p>
+            </div>
+
+        </section>
+        <section id="section3">
+            <div id="gridWrapper">
+                <div id="gridItem1" class="gridItem">
+                    
+                        <h2>Onsite Camping</h2>
+                        <p>Enjoy fantastic views camping with us. </p>
+                </div>
+                <div id="gridItem2" class="gridItem">
+                    
+                        <h2>Ziplining</h2>
+                        <p>Dare to have a go on our world famous zip lines</p>
+                </div>
+                <div id="gridItem3" class="gridItem">
+                    
+                        <h2>Shopping</h2>
+                        <p>Onsite shopping available, Food, clothing, gifts.. </p>
+                </div>
+                <div id="gridItem4" class="gridItem">
+                    
+                        <h2>Kayaking </h2>
+                        <p>Rent or bring your own kayak</p>
+                </div>
+                <div id="gridItem5" class="gridItem">
+                    
+                        <h2>Climbing</h2>
+                        <p>Take your pick, we have four amazing outdoor climbing walls. Courses available</p>
+                </div>
+            </div>
+
+               
+       
+
+        </section>
+    </main>
+    <footer>
+
+        <ul class="footerItem">
+            <li>About us</li>
+            <li>AdventureVerse</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>News</li>
+            <li>Accessibility</li>
+            <li>Sitemap</li>
+        </ul>
+        <ul class="footerItem">
+            <li>Contact us</li>
+            <li>Gift cards</li>
+        </ul>
+        <ul class="footerItem">
+            <li>Terms and conditions</li>
+            <li>Privacy policy</li>
+            <li>Cookies</li>
+            <li>Modern slavery statement</li>
+            <li>Safety information</li>
+        </ul>
+        <div class="socialMediaIcons footerItem">
+            <img src="assets/facebookIcon.png" alt="facebook">
+            <img src="assets/instagramIcon.png" alt="instagram">
+            <img src="assets/twitterIcon.png" alt="twitter">
+        </div>
+       
+    </footer>
+    <h3 id="portfolio"><a href="https://ajcoldi.github.io/">Back to Portfolio</a></h3>
+    <script>
+
+        $(document).ready(function(){
+            const textLinks =  $('#section2 a');
+            textLinks.css('color', '#219145');
+            textLinks.css('font-weight', '600');
+            textLinks.css('text-decoration', 'none');
+        })
+    </script>
+</body>
+</html>

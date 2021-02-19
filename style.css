@@ -455,7 +455,14 @@ section{
     cursor: pointer;
 }
 
-
+.thumbWebsites> button{
+    border: solid 2px #4aa0ba;
+    width: 100%;
+    padding: 12px 0;
+    background: #a8cee0;
+    
+    
+}
 
 /*-----------------------contact form-----------------------*/
 

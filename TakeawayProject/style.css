@@ -372,38 +372,7 @@ header>small{
     
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    background: black;
-    color:white;
-    text-align: center;
-}
-footer>div{
-    
-flex: 1;
-}
-footer>div>h3{
-    font-size: 12px;
-    align-items: center;
-    text-align: center;
-}
-footer>p{
-    flex: 1;
-}
-footer>p>a{
-    color: #55ab3f;
-}
-footer>ul{
-    flex: 1;
-}
-footer>ul>li{
-    list-style:none;
-}
-footer>ul>li>a{
-    color: #55ab3f;
-    text-decoration: none;
-}
+
 
 
 
@@ -459,4 +428,49 @@ footer>ul>li>a{
 }
 .itemAdd{
     flex: 1;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background: black;
+    color:white;
+    text-align: center;
+}
+footer>div{
+    
+flex: 1;
+}
+footer>div>h3{
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+}
+footer>p{
+    flex: 1;
+}
+footer>p>a{
+    color: #55ab3f;
+}
+footer>ul{
+    flex: 1;
+    padding: 20px;
+}
+footer>ul>li{
+    list-style:none;
+    
+}
+footer>ul>li, a{
+    color: #55ab3f;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#portfolio{
+    text-align: center;
+    padding: 20px;
+    background-color: #303030;
+}
+#portfolio>h3, a{
+    color: white;
 }
