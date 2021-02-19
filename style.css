@@ -551,6 +551,7 @@ section{
 }
 .formControl>#subBtn{
     margin: auto;
+    height: 50px;
     width: 150px;
     border: solid 1px #303030;
 }
