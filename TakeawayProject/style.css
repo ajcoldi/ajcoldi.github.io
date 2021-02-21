@@ -398,10 +398,11 @@ header>small{
 }
 #accordion{
     padding: 40px;
-    width: 60%;
+    width: 80%;
     margin: auto;
     height: auto;
 }
+
 #accordion>h3{
     box-shadow: 0px 0px 4px lightgray;
     border-radius: 5px;
@@ -423,13 +424,75 @@ header>small{
     border-bottom: solid 1px lightgray;
     padding:10px 20px ;
 }
-.ItemDescript{
-    flex: 10;
+
+.itemImg{
+    height: 70px;
+    width: 100px;
+    
+    flex: 1;
+    
+   
+}
+#itemImgPizza1{
+    background: url("assets/accordianIcons/pizza1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgPizza2{
+    background: url("assets/accordianIcons/pizza2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgPizza3{
+    background: url("assets/accordianIcons/pizza3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgchicken{
+    background: url("assets/accordianIcons/chicken1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgpasta{
+    background: url("assets/accordianIcons/pasta1.jfif");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgkids{
+    background: url("assets/accordianIcons/kids1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgsides{
+    background: url("assets/accordianIcons/side1.jpg.crdownload");
+    background-size: cover;
+    background-position: center;
+}
+#itemImgDessert1{
+    background: url("assets/accordianIcons/dessert1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.itemText{
+    flex: 6;
+    padding: 0 20px;
+    
+}
+.itemText>h1{
+    font-size: 20px;
+}
+.itemText>p{
+
+}
+.itemText>small{
+    color: #55ab3f;
 }
 .itemAdd{
-    flex: 1;
+    flex: 0.5;
 }
-
+.itemAdd>img:hover{
+    cursor: pointer;
+}
 footer{
     display: flex;
     align-items: center;
@@ -466,11 +529,3 @@ footer>ul>li, a{
     font-size: 18px;
 }
 
-#portfolio{
-    text-align: center;
-    padding: 20px;
-    background-color: #303030;
-}
-#portfolio>h3, a{
-    color: white;
-}
