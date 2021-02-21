@@ -380,19 +380,22 @@ header>small{
 #sectionAccordian{
     background: whitesmoke;
 
-    padding-top: 0 40px;
+ 
 }
-#sectionAccordian>h2{
-    padding: 40px 0;
+#menuHeaderWrap{
+    background: linear-gradient(white,whitesmoke);
+    padding: 20px;
+}
+#menuHeaderWrap>h2{
+  
     text-align: center;
     color: grey;
     font-size: 60px;
     text-shadow: none;
 }
-#sectionAccordian>p{
+#menuHeaderWrap>p{
     width: 50%;
     margin: auto;
- 
     text-align: center;
     text-shadow: none;
 }
@@ -410,18 +413,24 @@ header>small{
     margin: 4px;
     background: white;
 }
+#accordion>h3:hover{
+    cursor: pointer;
+}
 #accordion>div{
+    margin: auto;
     
     border-radius: 5px;
     border: solid 2px whitesmoke;
     background: white;
     height: auto;
+    width: 95%;
     
 }
 .sectionItem{
     display: flex;
     align-items: center;
     border-bottom: solid 1px lightgray;
+    box-shadow: 0 0 4px lightgray;
     padding:10px 20px ;
 }
 
