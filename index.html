@@ -4,7 +4,7 @@
         <title>Alex Coldicott Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-        
+        <link rel="stylesheet" href="lightbox.min.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta charset="utf-8">
@@ -12,7 +12,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script src="lightbox-plus-jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js" integrity="sha512-7g5NUcH79A/d1+q+cj3KTJ31mCUPkD8f58sFEc98H5015295lT+ZBKWkaMeS6Snbu3m2VdfoW4VbSo9hOAJqYw==" crossorigin="anonymous"></script>
         <script type="text/javascript">
+
+
+
                 (function() {
                 emailjs.init("user_xIebnz22T0vLXWFGfvUSO");
                 })();
@@ -152,84 +157,112 @@
                 <div id="section2Break">
                         <h3 style="color: white; text-align: center;">Projects:</h3>
                 </div> 
-                <div id="projectFilterWrapper">
-                        <button class="categoryBtn categoryBtnStyle" id="websites">Website Builds</button>
-                        <button class="categoryBtn categoryBtnStyle" id="designs">Website Designs</button>
-                        <button class="categoryBtn categoryBtnStyle"  id="art">Graphics</button>
-                        <button class="categoryBtn categoryBtnAllStyle" id="all">All</button>
-                </div>
-                <section id="thumbnailSection">
-                   
-                    
-                    
-                    <div id="portThumbnailWrapper">
-                        
-                        
-                       
-                        
-                        <div id="modal"></div>
-                        
-                        <div id="modalImgContainer">
-                            <img class="modalContent" id="img01">
-                        </div>  
-                                     
-                        <div class="thumbnail websites">
-                            <img class="thumbImg" src="assets/adventureThumb.jpg">
-                            <button class="thumbnailBtn"><a href="HolidayProject/index.html">View Page</a></button>                 
-                        </div>  
-                        <div class="thumbnail websites">
-                            <img class="thumbImg" src="assets/takeawayThumb.jpg">
-                            <button class="thumbnailBtn"><a href="TakeawayProject/index.html">View Page</a></button>
-                        </div>  
-                        <div class="thumbnail designs">
-                            <img id="apple" class="thumbImg" src="assets/ipodDesign.jpg">
-                            <p>Apple graphic</p>
-                            
-                        </div>  
-                        
-                        <div class="thumbnail art">
-                            <img class="thumbImg" src="assets/art2.jpg">
-                            <p>Game Concept</p>
-                            <small>Neo noir style mockup</small>
-                        </div> 
-                        <div class="thumbnail art">
-                            <img class="thumbImg" src="assets/art3.jpg">
-                            <p>Game Concept</p>
-                            <small>Future healmet concept</small>
-                        </div> 
-                        <div class="thumbnail art">
-                            <img class="thumbImg" src="assets/art4.jpg">
-                            <p>Pencil portrait</p>
-                            <small>Taken from the movie 'Taxi driver'</small>
-                        </div> 
-                        <div class="thumbnail art">
-                            <img class="thumbImg" src="assets/art5.jpg">
-                            <p>Biro drawing</p>
-                            <small>Spare time doodle</small>
-                        </div> 
-                        <div class="thumbnail art">
-                            <img class="thumbImg" src="assets/art6.jpg">
-                            <p>Biro drawing</p>
-                            <small>Spare time doodle</small>
-                        </div>
-                        <div class="thumbnail designs">
-                            <img id="apple" class="thumbImg" src="assets/bostonDynamicsDesign.jpg">
-                            <p>Boston Dynamics Web Design</p>
-                            
-                        </div>  
-                        <div class="thumbnail designs">
-                            <img id="apple" class="thumbImg" src="assets/theDeepDesign.jpg">
-                            <p>The Deep Web Design</p>
-                            
-                        </div>  
-                        <div class="thumbnail designs">
-                            <img id="apple" class="thumbImg" src="assets/furnitureStoreDesign.jpg">
-                            <p>Furniture Store Web Design</p>
-                            
-                        </div>  
-                        
-                        
+                
+  
+                    <div class="container">
+                        <div class="port-gallery">
+                            <div id="pageBreakProjects" class="filterizr-control">
+                                <ul id="filterContainer" class="filterizr-filter">
+                                    <li class="categoryBtnStyle" data-filter="1">Web Designs</li>
+                                    <li class="categoryBtnStyle" data-filter="2">Web Development</li>
+                                    <li class="categoryBtnStyle"  data-filter="4">Art</li>
+                                    <li class="categoryBtnAllStyle" class="filtr-active" data-filter="all">All</li>
+                                </ul>
+                            </div>
+                            <section id="thumbnailSection"></section>
+                            <div class="filtr-container">
+                
+    
+                                <div class="filtr-item" data-category="1" data-title="Website Design - Boston Dynamics">
+                                    <a  href="assets/tumbnails/webDesBostonD-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/webDesBostonD-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Website Design - Boston Dynamics</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="1" data-title="Website Design - Ipod">
+                                    <a  href="assets/tumbnails/webDesIpod-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/webDesIpod-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Website Design - Ipod</a></div>
+                                </div>
+                                    <div class="filtr-item" data-category="1" data-title="Website Design - The Deep">
+                                    <a  href="assets/tumbnails/WebDesDeep-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/WebDesDeep-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Website Design - The Deep</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="1" data-title="Website Design - Furniture Store">
+                                    <a  href="assets/tumbnails/WebDesFurniture-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/WebDesFurniture-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Website Design - Furniture Store</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="2" data-title="Website Build - Visit Web Page">
+                                    <a  href="assets/tumbnails/webDevAdventure-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/webDevAdventure-small.jpg"></a>
+                                    <div class="desc"><a href="HolidayProject/index.html" target="_blank" rel="noopener nofollow">Website Build - Visit Web Page</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="2" data-title="Website Dishub Kota Bogor">
+                                    <a  href="assets/tumbnails/webDevItalian-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/webDevItalian-small.jpg"></a>
+                                    <div class="desc"><a href="TakeawayProject/index.html" target="_blank" rel="noopener nofollow">Website Build - Visit Web Page</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="4" data-title="128 Web - HTML Website Template">
+                                    <a  href="assets/tumbnails/artTaxiDriver-large.jpg" data-lightbox="mygallery" data-title="Pencil drawing - Taxi Driver"><img  src="assets/tumbnails/artTaxiDriver-small.jpg" ></a>
+                                    <div class="desc"><a href="https://lab.devaradise.com/128web" target="_blank" rel="noopener">Pencil drawing - Taxi Driver</a></div>
+                                </div>
+                
+                                <div class="filtr-item" data-category="4" data-title="Biro drawing">
+                                    <a  href="assets/tumbnails/artMoon-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/artMoon-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Biro drawing</a></div>
+                                </div>
+                
+                                <div class="filtr-item" data-category="4" data-title="Biro drawing">
+                                    <a  href="assets/tumbnails/artMonkey-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/artMonkey-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Biro drawing</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="4" data-title="Graphics Tablet - Game Concept">
+                                    <a  href="assets/tumbnails/artHelmet-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/artHelmet-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Graphics Tablet - Game Concept</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="4" data-title="Graphics Tablet - Game Concept">
+                                    <a  href="assets/tumbnails/artNoirStreet-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/artNoirStreet-small.jpg"></a>
+                                    <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Graphics Tablet - Game Concept</a></div>
+                                </div>
+                            </div>
+                
                     </div>
+                </div>
+           
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
 
                   
@@ -289,6 +322,22 @@
     </div>
     
     <script>
+        $(document).ready(function() {
+
+$('.filterizr-filter li').click(function() {
+  $('.filterizr-filter li').removeClass('filtr-active');
+  $(this).addClass('filtr-active');
+});
+$('.filterizr-sorting li').click(function() {
+  $('.filterizr-sorting li').removeClass('filtr-active');
+  $(this).addClass('filtr-active');
+});
+
+var filterizd = $('.filtr-container').filterizr();
+
+filterizd.filterizr('sort', 'title', 'asc');
+
+});
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
