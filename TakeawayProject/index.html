@@ -49,6 +49,7 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">FindUs</a></li>
             </ul>
+            <img id="hamburgerMenu" src="assets/hamburgerMenu.png" alt="Menu">
         </nav>
         <img id="headerImg" src="assets/pizzaheader.jfif" alt="headerImg pizza">
      
@@ -212,15 +213,15 @@
                 <div id="img1"></div>
                 <div>
                     <h2>Mega Burger Meal Deal</h2>
-                    <p>Suculent quarter pounder beef or chicken burger, served with salad fries and a drink</p>
+                    <p>Quarter pounder burger, served with salad fries and a drink</p>
                     <button>Order Now</button>
                 </div>
             </div>
             <div class="gridItem, gridItemSmall" id="gridItem5">
                 
                 <div>
-                    <h2>Mega Burger Meal Deal</h2>
-                    <p>Suculent quarter pounder beef or chicken burger, served with salad fries and a drink</p>
+                    <h2>Gelleto </h2>
+                    <p>A huge choice of amazing traditional Italian ice cream</p>
                     <button>Order Now</button>
                 </div>
                 <div id="img2"></div>
@@ -228,8 +229,8 @@
             <div class="gridItem, gridItemSmall" id="gridItem6">
                 <div id="img3"></div>
                 <div>
-                    <h2>Mega Burger Meal Deal</h2>
-                    <p>Suculent quarter pounder beef or chicken burger, served with salad fries and a drink</p>
+                    <h2>Chicken Deals</h2>
+                    <p>Beautiful chilli salted chicken wings</p>
                     <button>Order Now</button>
                 </div>
             </div>
@@ -246,13 +247,13 @@
                 <img src="assets/noProfilePink.png" alt="">
                 
                 <h3>Sam</h3>
-                <p>"Very beautiful restaurant with really delicious food. We had the chicken with mashed potatoes and vegetables."</p>
+                <p>"Very beautiful restaurant with really delicious food"</p>
                 <small>*****</small>
             </div>
             <div class="testimonialWrap">
                 <img src="assets/profile2.jfif">
                 <h3>Richard</h3>
-                <p>" If you’re looking for a warm, cozy, yet fancy night out, give it a try. I think you’re gonna like it."</p>
+                <p>" If you’re looking for a warm, cozy, yet fancy night out, give it a try."</p>
                 <small>*****</small>
             </div>
             <div class="testimonialWrap">
@@ -283,5 +284,24 @@
         </ul>
     </footer>
     
+
+    <script>
+        $(document).ready(function(){
+            var hbMenu =  $("#hamburgerMenu");
+            var nav = $("nav ul");
+           
+
+            hbMenu.on('click', hbMenu, function(){
+                nav.toggleClass("hide");
+            });
+        });
+                    //$(document).ready(function(){
+                      //$("button").click(function(){
+                       // $("p").toggleClass("main");
+                     //});
+//});
+    
+
+    </script>
 </body>
 </html>

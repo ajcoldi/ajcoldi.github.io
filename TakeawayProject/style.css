@@ -7,7 +7,7 @@ body{
     background: black;
     font-family: 'Nunito', sans-serif;
 }
-
+/*-----------------------Navbar-----------------------*/
 nav{
     margin-top: 30px;
     margin-bottom: 50px;
@@ -40,6 +40,9 @@ nav>ul{
     flex: 1;
     font-weight: 600;
 }
+.hide{
+    display: inline;
+}
 nav>ul>li{
     list-style: none;
 }
@@ -51,8 +54,15 @@ nav>ul>li a{
 
 }
 nav>ul>li  a:hover{
-    background-color: green; 
+    background-color: #c24444; 
 }
+#hamburgerMenu{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: none;
+}
+/*-----------------------Header section-----------------------*/
 header{
     display: flex;
     flex-direction: column;
@@ -117,266 +127,12 @@ header>small{
 
 
 
-#section1{
-    background: whitesmoke;
-  
-}
-#section1>h1{
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
-    color: #b32020;
-    padding-top: 50px;
-
-}
-#section1>h2{
-    font-size: 20px;
-    font-weight: 100;
-    text-align: center;
-    color: black;
-    padding-bottom: 50px;
-    text-shadow: none;
-}
-
-
-
-#section1>p{
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-}
-#section1>p a{
-    margin-top: 20px;
-    justify-content: center;
-    
-    text-align: center;
-    border-radius: 20px;
-    background: #55ab3f;
-    color: white;
-    padding:5px 10px;
-    transition: 0.2s;
-}
-#section1>p a:hover{
-    cursor: pointer;
-    background: white;
-    border: solid 2px #55ab3f;
-    color: #55ab3f;
-}
-
-#headerFlexWrap{
-    margin: auto;
- 
-    width: 90vw;
-    display: flex;
-    padding: 0 15vw;
-    
-}
-.testimonialWrap{
-    height: 200px;
-    width: 150px;
-    background: white;
-    box-shadow: grey 0px 0px 5px;
-    opacity: 0.9;
-    margin: auto;
-    padding:0 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition: 0.2s;
-}
-.testimonialWrap:hover{
-    transform: translateY(-5px);
-}
-.testimonialWrap>img{
-    background: #303030;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    margin: auto;
-}
-
-.testimonialWrap>h3,p{
-  
-
-}
-.testimonialWrap>h3{
-
-}
-.testimonialWrap>p{
-    font-size: 12px;
-}
-.testimonialWrap>small{
-
-    padding: 5px;
-    color: #b32020;
-}
-
-
-
-
-        
-#section3{
-    height: 120vh;
-    padding: 80px;
-    background: whitesmoke;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-areas: 
-    "g1 g1 g2"
-    "g1 g1 g2"
-    "g1 g1 g5"
-    "g3 g4 g5"
-    "g3 g4 g6"
-    "g3 g4 g6"
-    ;
-}
-.gridItem{
-    background: whitesmoke;
-    border: solid 2px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 20px;
-    color: white;
-    padding: 0;
-}
-.gridItem> button{
-    height: 30px;
-    width: 100%;
-    font-weight: 600;
-    background: #55ab3f;
-    border:none;
-    transition: 0.2s;
-    
-}
-.gridItem > h2{
-    width: 100%;
-    background: #303030;
-    opacity: 0.7;
-}
-.gridItem > p {
-    
-    width: 100%;
-    background: #303030;
-    opacity: 0.7;
-}
-.gridItem> button:hover{
-    cursor: pointer;
-    padding: 30px 0;
-}
-#gridItem1{
-    grid-area: g1;
-    background: url("assets/resturantPic.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 0;
-    
-}
-#gridItem1>div{
-    background: black;
-    width: 100%;
-    height: 30px;
-    opacity: 0.6;
-    overflow: hidden;
-    transition: 0.2s;
-}
-#gridItem1>div:hover{
-    height: 100px;
-    cursor: pointer;
-}
-#gridItem1>div>p{
-    font-size: 14px;
-}
-#gridItem3{
-    grid-area: g3;
-    background: url("assets/2pizzaDeal.jpg.crdownload");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-#gridItem4{
-    grid-area: g4;
-    background: url("assets/pizzaPastaDeal.jpg");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    
-}
-#gridItem2{
-    grid-area: g2;
-    }
-
-#gridItem5{
-    grid-area: g5;
-    }
-#gridItem6{
-    grid-area: g6;
-    }
 
 
 
 
 
-
-#img1{
-    background: url("assets/burgerMealDeal.jpg");
-    background-size: cover;
-    background-position: center;
-}
-#img2{
-    background: url("assets/iceCream.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-#img3{
-    background: url("assets/chickenWings.jfif");
-    background-size: cover;
-    background-position: center;
-}
-.gridItemSmall{
-    border: solid 2px  #303030;
-    background: #303030;
-    color: white;
-    display: flex;
-    text-align: center;
-}
-.gridItemSmall>div{
-    flex: 1;
-    padding: 10px;
-    
-}
-.gridItemSmall>div>button{
-    height: 25px;
-    width: 40%;
-    border-radius: 10px;
-    background: #b32020;
-    border:none;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.gridItemSmall>div>p{
-    font-size: 12px;
-}
-
-#section2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    
-}
-
-
-
-
-
-
+/*-----------------------Menu Section-----------------------*/
 #sectionAccordian{
     background: whitesmoke;
 
@@ -437,7 +193,6 @@ header>small{
 .itemImg{
     height: 70px;
     width: 100px;
-    
     flex: 1;
     
    
@@ -494,7 +249,7 @@ header>small{
 
 }
 .itemText>small{
-    color: #55ab3f;
+    color: #62bf7f;
 }
 .itemAdd{
     flex: 0.5;
@@ -502,6 +257,270 @@ header>small{
 .itemAdd>img:hover{
     cursor: pointer;
 }
+
+
+
+/*-----------------------Deal Grid Section-----------------------*/
+        
+#section3{
+    height: 120vh;
+    padding: 40px 80px;
+    background: whitesmoke;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "g1 g1 g2"
+    "g1 g1 g2"
+    "g1 g1 g5"
+    "g3 g4 g5"
+    "g3 g4 g6"
+    "g3 g4 g6"
+    ;
+}
+.gridItem{
+    background: whitesmoke;
+    box-shadow: 0 0 4px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    padding: 0;
+}
+.gridItem> button{
+    height: 30px;
+    width: 100%;
+    font-weight: 600;
+    background: #62bf7f;
+    border:none;
+    transition: 0.2s;
+    
+}
+.gridItem > h2{
+    width: 100%;
+    background: #303030;
+    opacity: 0.7;
+}
+.gridItem > p {
+    
+    width: 100%;
+    background: #303030;
+    opacity: 0.7;
+}
+.gridItem> button:hover{
+    cursor: pointer;
+    padding: 30px 0;
+}
+#gridItem1{
+    grid-area: g1;
+    background: url("assets/resturantPic.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    
+}
+#gridItem1>div{
+    background: black;
+    width: 100%;
+    height: 30px;
+    opacity: 0.6;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#gridItem1>div:hover{
+    height: 100px;
+    cursor: pointer;
+}
+#gridItem1>div>p{
+    font-size: 14px;
+}
+#gridItem3{
+    grid-area: g3;
+    background: url("assets/2pizzaDeal.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#gridItem4{
+    grid-area: g4;
+    background: url("assets/pizzaPastaDeal.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+#gridItem2{
+    grid-area: g2;
+    }
+
+#gridItem5{
+    grid-area: g5;
+    }
+#gridItem6{
+    grid-area: g6;
+    }
+
+
+
+
+
+
+#img1{
+    background: url("assets/burgerMealDeal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#img2{
+    background: url("assets/iceCream.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img3{
+    background: url("assets/chickenWings.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.gridItemSmall{
+    box-shadow: 0 0 4px gray;
+    background: #303030;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.gridItemSmall>div{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+.gridItemSmall>div>h2{
+    font-size: 18px;
+}
+.gridItemSmall>div>button{
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 80%;
+    border-radius: 10px;
+    background: #b32020;
+    border:none;
+    color: white;
+   
+    cursor: pointer;
+}
+
+.gridItemSmall>div>p{
+    font-size: 12px;
+}
+
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+/*-----------------------Testimonial section-----------------------*/
+#section1{
+    background: whitesmoke;
+  
+}
+#section1>h1{
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    color: #b32020;
+    padding:   0 50px 40px 60px ;
+    
+    
+
+}
+#section1>h2{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    color: black;
+    
+    text-shadow: none;
+    padding:   0 50px 40px 60px ;
+}
+
+
+
+#section1>p{
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+#section1>p a{
+    margin-top: 20px;
+    justify-content: center;
+    
+    text-align: center;
+    border-radius: 20px;
+    background: #62bf7f;
+    color: white;
+    padding:5px 10px;
+    transition: 0.2s;
+}
+#section1>p a:hover{
+    cursor: pointer;
+    background: white;
+    border: solid 2px #62bf7f;
+    color: #62bf7f;
+}
+
+#headerFlexWrap{
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    padding: 0 15vw;
+    
+}
+.testimonialWrap{
+    height: 180px;
+    width: 150px;
+    background: white;
+    box-shadow: grey 0px 0px 5px;
+    opacity: 0.9;
+    margin: auto;
+    padding:0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.2s;
+}
+.testimonialWrap:hover{
+    transform: translateY(-5px);
+}
+.testimonialWrap>img{
+    background: #303030;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+.testimonialWrap>h3{
+    font-size: 16px;
+}
+.testimonialWrap>p{
+    font-size: 12px;
+}
+.testimonialWrap>small{
+
+    padding: 5px;
+    color: #b32020;
+}
+
+/*-----------------------Footer section-----------------------*/
 footer{
     display: flex;
     align-items: center;
@@ -522,7 +541,7 @@ footer>p{
     flex: 1;
 }
 footer>p>a{
-    color: #55ab3f;
+    color: #62bf7f;
 }
 footer>ul{
     flex: 1;
@@ -533,8 +552,203 @@ footer>ul>li{
     
 }
 footer>ul>li, a{
-    color: #55ab3f;
+    color: #62bf7f;
     text-decoration: none;
     font-size: 18px;
 }
 
+@media only screen and (max-width: 850px){
+    #hamburgerMenu{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        display: inline;
+    }
+    nav>ul{
+        display: flex;
+        position: absolute;
+        top: 80px;
+        display: none;
+        background: #b32020;
+    }
+    
+    nav>ul>li a{
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        color: ghostwhite;
+        z-index: 999;
+    
+    }
+    #accordion{
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    #section3{
+        height: 180vh;
+        padding: 40px 80px;
+        background: whitesmoke;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "g1 g1 g1 g1"  
+        "g3 g3 g3 g3"  
+        "g4 g4 g6 g6"
+        "g2 g2 g5 g5"
+      
+        ;
+    }
+    #headerFlexWrap{
+        width: 90vw;
+        padding: 0 5vw;
+        
+    }
+    /*-----------------------Footer section-----------------------*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer>div>h3{
+        margin-top: 20px;
+    }
+    footer>p{
+        flex: 1;
+        margin-top: 20px;
+    }
+    footer>ul>li{
+        list-style:none;
+        display: inline-block;
+        margin: 5px 10px;
+        
+    }
+    footer>ul>li, a{
+        color: #62bf7f;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+   
+}    
+@media only screen and (max-width: 600px){
+
+    /*-----------------------Header section-----------------------*/
+
+header>input{
+    width: 250px;
+}
+#inputSearchIcon{
+    right: -100px;
+}
+header>h1{
+    font-size: 40px;
+    padding: 0 20px; 
+}
+header>h2{
+    padding: 0 20px;
+}
+header>small{
+    padding: 0 20px;
+}
+/*-----------------------Menu Section-----------------------*/
+
+#menuHeaderWrap>h2{
+    font-size: 40px;
+}
+#menuHeaderWrap>p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+    #accordion{
+        
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    .sectionItem{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px lightgray;
+        box-shadow: 0 0 4px lightgray;
+        padding:10px 20px ;
+      
+        
+    }
+    
+    .itemImg{
+        height: 200px;
+        width: 30%;
+        flex: none;
+        padding: 0;
+    
+    }
+    .itemText>h1{
+        font-size: 16px;
+        width: 100%;
+        margin: auto;
+        
+    }
+    .itemText>p{
+        width: 100%;
+        margin: auto;
+    }
+    .itemText>small{
+        width: 50%;
+        margin: auto;
+    }
+   
+    #section3{
+        height: 280vh;
+        padding: 20px 40px;
+        background: whitesmoke;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "g1"  
+        "g3"  
+        "g4"
+        "g6"
+        "g2"
+        "g5"
+      
+        ;
+    }
+    #headerFlexWrap{
+        flex-direction: column;
+        
+    }
+    .testimonialWrap{
+        height: 220px;
+        width: 220px;
+ 
+   
+        margin-top: 20px;
+        padding:0 10px;
+    }
+    .testimonialWrap>h3{
+        font-size: 16px;
+        transform: translateY(-20px);
+    }
+    .testimonialWrap>p{
+        font-size: 12px;
+        transform: translateY(-20px);
+        padding:  0 10px;
+    }
+   
+}    
