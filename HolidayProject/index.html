@@ -38,6 +38,7 @@
             <li><a href="#">Location</a></li>
             <li><a href="#">Deals</a></li>
         </ul>
+        <img id="hbMenu" src="assets/hamburger-menu.png" alt="Menu">
     </nav>
     <header>
         <div id="headerItemWrapper">
@@ -111,6 +112,7 @@
        
 
         </section>
+        
     </main>
     <footer>
 
@@ -149,6 +151,16 @@
             textLinks.css('color', '#219145');
             textLinks.css('font-weight', '600');
             textLinks.css('text-decoration', 'none');
+
+
+            var hbMenu = $("#hbMenu");
+            var nav = $("nav ul");
+
+            $(hbMenu).click(function(){
+                nav.toggleClass("hide");
+            });
+
+
         })
     </script>
 </body>

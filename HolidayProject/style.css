@@ -26,6 +26,7 @@
 #liveChatBtn>h3{
     text-shadow: 0 0 2px #303030;
 }
+/*-----------------------navbar-----------------------*/
 nav{
     display: flex;
     padding: 0 20px;
@@ -51,6 +52,9 @@ nav>ul{
     
    
 }
+.hide{
+    display: block;
+}
 nav>ul>li{
     
     list-style: none;
@@ -68,9 +72,11 @@ nav>ul>li>a:hover{
     background: whitesmoke;
 }
 
+#hbMenu{
+    display: none;
+}
 
-
-
+/*-----------------------header section-----------------------*/
 
 header{
    background: url("assets/headerImg.jpg"); 
@@ -187,7 +193,7 @@ header{
 
 
 
-
+/*-----------------------grid section-----------------------*/
 
 #section3{
 
@@ -253,7 +259,7 @@ header{
     text-shadow: 0 0 5px black;
 }
 
-
+/*-----------------------footer section-----------------------*/
 footer{
     display: flex;
     justify-content: center;
@@ -276,7 +282,45 @@ footer{
 #portfolio>h3, a{
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
+    nav>.socialMediaIcons{
+        margin-top: 10px;
+    }
+    #hbMenu{
+        display: block;
+        width: 30px;
+        margin-top: 10px;
+    }
+    nav>ul{
+        position:absolute;
+        right: 0;
+        top: 80px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;  
+    }
+    nav>ul>li>a{
+        background: white;
+        width: 200px;
+        
+    }
     #headerItemWrapper{
         
         margin: 10%;
@@ -315,4 +359,17 @@ footer{
         "g6"
         ;
     }
+    /*-----------------------footer section-----------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #303030;
+    text-align: center;
+}
+
+.footerItem>li{
+    display: inline-block;
   }
+}
