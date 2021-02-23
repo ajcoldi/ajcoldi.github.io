@@ -172,7 +172,14 @@
                             <section id="thumbnailSection"></section>
                             <div class="filtr-container">
                 
-    
+                                <div class="filtr-item" data-category="2" data-title="Website Build - Visit Web Page">
+                                    <a  href="assets/tumbnails/webDevAdventure-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/webDevAdventure-small.jpg"></a>
+                                    <div class="desc"><a href="HolidayProject/index.html" target="_blank" rel="noopener nofollow">Website Build - Visit Web Page</a></div>
+                                </div>
+                                <div class="filtr-item" data-category="2" data-title="Website Build - Visit Web Page">
+                                    <a  href="assets/tumbnails/webDevItalian-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/webDevItalian-small.jpg"></a>
+                                    <div class="desc"><a href="TakeawayProject/index.html" target="_blank" rel="noopener nofollow">Website Build - Visit Web Page</a></div>
+                                </div>
                                 <div class="filtr-item" data-category="1" data-title="Website Design - Boston Dynamics">
                                     <a  href="assets/tumbnails/webDesBostonD-large.jpg" data-lightbox="mygallery"><img  src="assets/tumbnails/webDesBostonD-small.jpg"></a>
                                     <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Website Design - Boston Dynamics</a></div>
@@ -189,14 +196,7 @@
                                     <a  href="assets/tumbnails/WebDesFurniture-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/WebDesFurniture-small.jpg"></a>
                                     <div class="desc"><a href="#" target="_blank" rel="noopener nofollow">Website Design - Furniture Store</a></div>
                                 </div>
-                                <div class="filtr-item" data-category="2" data-title="Website Build - Visit Web Page">
-                                    <a  href="assets/tumbnails/webDevAdventure-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/webDevAdventure-small.jpg"></a>
-                                    <div class="desc"><a href="HolidayProject/index.html" target="_blank" rel="noopener nofollow">Website Build - Visit Web Page</a></div>
-                                </div>
-                                <div class="filtr-item" data-category="2" data-title="Website Dishub Kota Bogor">
-                                    <a  href="assets/tumbnails/webDevItalian-large.jpg" data-lightbox="mygallery"><img src="assets/tumbnails/webDevItalian-small.jpg"></a>
-                                    <div class="desc"><a href="TakeawayProject/index.html" target="_blank" rel="noopener nofollow">Website Build - Visit Web Page</a></div>
-                                </div>
+                               
                                 <div class="filtr-item" data-category="4" data-title="128 Web - HTML Website Template">
                                     <a  href="assets/tumbnails/artTaxiDriver-large.jpg" data-lightbox="mygallery" data-title="Pencil drawing - Taxi Driver"><img  src="assets/tumbnails/artTaxiDriver-small.jpg" ></a>
                                     <div class="desc"><a href="https://lab.devaradise.com/128web" target="_blank" rel="noopener">Pencil drawing - Taxi Driver</a></div>
@@ -324,20 +324,18 @@
     <script>
         $(document).ready(function() {
 
-$('.filterizr-filter li').click(function() {
-  $('.filterizr-filter li').removeClass('filtr-active');
-  $(this).addClass('filtr-active');
-});
-$('.filterizr-sorting li').click(function() {
-  $('.filterizr-sorting li').removeClass('filtr-active');
-  $(this).addClass('filtr-active');
-});
+                $('.filterizr-filter li').click(function() {
+                $('.filterizr-filter li').removeClass('filtr-active');
+                $(this).addClass('filtr-active');
+                });
+                
 
-var filterizd = $('.filtr-container').filterizr();
+                var filterizd = $('.filtr-container').filterizr();
 
-filterizd.filterizr('sort', 'title', 'asc');
+                const options = {
+                animationDuration: 0.2,}
 
-});
+                });
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();

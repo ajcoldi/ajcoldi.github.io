@@ -438,11 +438,10 @@ ul,ol {
 }
 .port-gallery ul li.filtr-active {
   cursor: default;
+  scale: (0);
 }
 
-.port-gallery ul.filterizr-sorting {
-	float: right;
-}
+
 
 .filtr-item {
   width: 25%;
